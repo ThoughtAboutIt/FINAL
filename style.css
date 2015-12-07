@@ -1,0 +1,281 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin:0;
+	padding:0;
+}
+#login-form
+{
+	margin-top:70px;
+}
+table
+{
+	border:solid #dcdcdc 1px;
+	padding:25px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+}
+table tr,td
+{
+	padding:15px;
+	//border:solid #e1e1e1 1px;
+}
+table tr td input
+{
+	width:97%;
+	height:45px;
+	border:solid #e1e1e1 1px;
+	border-radius:3px;
+	padding-left:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	background:#f9f9f9;
+	transition-duration:0.5s;
+	box-shadow: inset 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+table tr td button
+{
+	width:100%;
+	height:45px;
+	border:0px;
+	background:rgba(12,45,78,11);
+	background:-moz-linear-gradient(top, #595959 , #515151);
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+table tr td a
+{
+	text-decoration:none;
+	color:#00a2d1;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+}
+
+/* css for home page  */
+
+*
+{
+	margin:0;
+	padding:0;
+}
+#header
+{
+	width:100%;
+	height:60px;
+	background:rgba(00,11,22,33);
+	color:#9fa8b0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#header #left
+{
+	float:left;
+	position:relative;
+}
+#header #left label
+{
+	position:relative;
+	top:5px;
+	left:100px;
+	font-size:35px;
+}
+#header #right
+{
+	float:right;
+	position:relative;
+}
+#header #right #content
+{
+	position:relative;
+	top:20px;
+	right:100px;
+	color:#fff;
+}
+#header #right #content a
+{
+	color:#00a2d1;
+}
+
+
+#body
+{
+	text-align:center;
+	margin-top:150px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:36px;
+}
+}
+.cardpanel {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px; }
+  .cardpanel {
+    padding:10px;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px; }
+  .card .card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300; }
+    .card .card-title.activator {
+      cursor: pointer; }
+  .card.small, .card.medium, .card.large {
+    position: relative; }
+    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+      overflow: hidden; }
+    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
+      overflow: hidden; }
+    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  .card.small {
+    height: 300px; }
+    .card.small .card-image {
+      height: 150px; }
+    .card.small .card-content {
+      height: 150px; }
+  .card.medium {
+    height: 400px; }
+    .card.medium .card-image {
+      height: 250px; }
+    .card.medium .card-content {
+      height: 150px; }
+  .card.large {
+    height: 500px; }
+    .card.large .card-image {
+      height: 330px; }
+    .card.large .card-content {
+      height: 170px; }
+  .card .card-image {
+    position: relative; }
+    .card .card-image img {
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; }
+    .card .card-image .card-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px; }
+  .card .card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px; }
+    .card .card-content p {
+      margin: 0;
+      color: inherit; }
+    .card .card-content .card-title {
+      line-height: 48px; }
+  .card .card-action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px; }
+    .card .card-action a {
+      color: #ffab40;
+      margin-right: 20px;
+      -webkit-transition: color .3s ease;
+      -moz-transition: color .3s ease;
+      -o-transition: color .3s ease;
+      -ms-transition: color .3s ease;
+      transition: color .3s ease;
+      text-transform: uppercase; }
+      .card .card-action a:hover {
+        color: #ffd8a6; }
+  .card .card-reveal {
+    padding: 20px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    top: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none; }
+    .card .card-reveal .card-title {
+      cursor: pointer;
+      display: block; }
+
+#footer2{
+  margin-top:185px;
+}
+#footerlogin{
+  margin-top:206px;}
+#footer3{
+  margin-top:118px;
+}
+#footerstore{
+  margin-top:40px;
+}
+#checkout{
+  width: 100%;
+  height: auto;
+  margin-left:auto;
+  float:right;
+  text-align:right;
+}
+#button{
+  float:right;
+}
+#card{
+  height: 700px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+nav.top-nav {
+  height: 122px;
+  box-shadow: none; }
+  nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px; }
+#terms
+{float:left;
+padding:10px}
+#submit{
+text-align:right;}
+.box{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+/* Upload Form CSS */
+#formcontainer{
+    margin: 0 auto 0 auto;
+    width:70%;
+    background-color:rgba(00,11,22,33);
+    margin-top: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    padding-left: 150px;
+    padding-right:150px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
