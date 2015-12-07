@@ -30,11 +30,20 @@ while($row = mysqli_fetch_array($res))
 </div>
 <div id="formcontainer">
 <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:<br>
+    Please select image to upload:
+    <br>
+    <br>
     <input type="file" name="fileToUpload" id="fileToUpload">
+    <br>
+    <br>
+    Please enter name of badge you would like to upload.
+    <br>
+    <br>
+    <input id="icon image" class="file-path validate" type="text" placeholder="Please enter name of badge." name="txtimagename">
+    <br>
+    <label for="icon_image" style="margin-left:100px"></label>
+    <br>
     <input type="submit" value="Upload Image" name="submit">
-    <input id="icon image" class="file-path validate" type="text" name="txtimagename">
-    <label for="icon_image" style="margin-left:100px">Image</label>
 </form>
 </div>
 </body>
