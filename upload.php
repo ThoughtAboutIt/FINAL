@@ -1,4 +1,35 @@
 <?php
+session_start();
+include 'includes/dbconnect.php';
+if(!isset($_SESSION['user']))
+{
+	header("Location: index.php");
+}
+$res=mysqli_query($conn,"SELECT Email FROM users WHERE user_id=".$_SESSION['user']);
+while($row = mysqli_fetch_array($res))
+{
+    $_SESSION['username'] = $row['Email'];
+}
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Upload Finalised<?php echo $userRow['email']; ?></title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <div id="left">
+        </div>
+        <div id="right">
+            <div id="content">
+                Welcome <?php echo $_SESSION['username']; ?>&nbsp;<a href="logout.php?logout">Sign Out</a>
+            </div>
+        </div>
+    </div>
+    
+<div id="formcontainer">
+<?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -42,7 +73,7 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-$sql = "INSERT INTO CAInfo (CodeacademyBadges) VALUES ('". $fileName . "')";
+$sql = "INSERT INTO CAInfo (CodeacademyBadges, CodeacademyUsername, Hours) VALUES ('". $fileName . "', '" . $_REQUEST["uName"] . "', '" . $_REQUEST["hours"] . "')";
         include_once "includes/dbconnect.php";
 if
     ($conn->query ($sql)=== TRUE){
@@ -50,3 +81,9 @@ if
 }
 $conn->Close();
 ?>
+    <br>
+    <br>
+  <a href="home.php">Go back to homepage.</a>  
+</div>
+</body>
+</html>
